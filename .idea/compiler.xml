@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="smilesnail-hoa-facade" />
         <module name="smilesnail-ums" />
-        <module name="smilesnail-common" />
+        <module name="trade-common-core" />
         <module name="smilesnail" />
-        <module name="smilesnail-hoa" />
+        <module name="smilesnail-hoa-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
