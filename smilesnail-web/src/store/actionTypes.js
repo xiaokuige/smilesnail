@@ -1,0 +1,1 @@
+export const INIT_USER_DATA = 'init_user_data';
