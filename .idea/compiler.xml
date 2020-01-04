@@ -12,8 +12,5 @@
         <module name="smilesnail-hoa-api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="smilesnail" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

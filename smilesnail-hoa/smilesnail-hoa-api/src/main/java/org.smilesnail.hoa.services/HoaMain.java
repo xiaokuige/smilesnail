@@ -1,6 +1,7 @@
 package org.smilesnail.hoa.services;
 
-import com.sun.net.httpserver.HttpServer;
+
+import org.smilesnail.hoa.services.netty.HttpServer;
 
 /**
  * @Description:项目启动类
@@ -9,7 +10,8 @@ import com.sun.net.httpserver.HttpServer;
  * @Date： 2019/12/20 21:37
  */
 public class HoaMain {
-    public static void main(String[] args) {
-        HttpServer httpServer = new HttpServer();
+    public static void main(String[] args) throws Exception {
+        HttpServer httpServer = new HttpServer(8001);
+        httpServer.run();
     }
 }
