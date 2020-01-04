@@ -8,31 +8,18 @@ import java.io.Serializable;
  * @Description:
  * @author: xiaokuige
  * @Emial: 651023907
- * @Date： 2020/1/3 17:34
+ * @Date： 2020/1/4 14:11
  */
 public class ParameterOrder implements Serializable {
     private static final long serialVersionUID = 2823604289137689725L;
-    private String origIp;
     private String serviceName;
     private String methodName;
     private JSONObject jsonObject;
 
-    public ParameterOrder() {
-    }
-
-    public ParameterOrder(String origIp, String serviceName, String methodName, JSONObject jsonObject) {
-        this.origIp = origIp;
-        this.serviceName = serviceName;
+    public ParameterOrder(String autServiceName, String methodName, JSONObject jsonObject) {
+        this.serviceName = autServiceName;
         this.methodName = methodName;
         this.jsonObject = jsonObject;
-    }
-
-    public String getOrigIp() {
-        return origIp;
-    }
-
-    public void setOrigIp(String origIp) {
-        this.origIp = origIp;
     }
 
     public String getServiceName() {
@@ -61,12 +48,10 @@ public class ParameterOrder implements Serializable {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("ParameterOrder{");
-        sb.append(", origIp='").append(origIp).append('\'');
-        sb.append(", serviceName='").append(serviceName).append('\'');
-        sb.append(", methodName='").append(methodName).append('\'');
-        sb.append(", jsonObject=").append(jsonObject);
-        sb.append('}');
-        return sb.toString();
+        return "ParameterOrder{" +
+                "serviceName='" + serviceName + '\'' +
+                ", methodName='" + methodName + '\'' +
+                ", jsonObject=" + jsonObject +
+                '}';
     }
 }

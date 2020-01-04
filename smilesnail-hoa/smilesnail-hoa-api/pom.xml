@@ -54,5 +54,10 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+        <!--common-->
+        <dependency>
+            <groupId>org.smilesnail</groupId>
+            <artifactId>smilesnail-common-core</artifactId>
+        </dependency>
     </dependencies>
 </project>
